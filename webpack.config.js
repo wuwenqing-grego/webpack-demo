@@ -8,9 +8,13 @@ module.exports = {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+  },
   plugins: [new HtmlWebpackPlugin({
     title: 'My New App',
-    filename: 'index.[contenthash].html',
+    filename: 'index.html',
     template: 'src/index.html'
   })],
   module: {
