@@ -1,2 +1,2 @@
-import './x.css'
-export default 'xxx'
+import style from './x.scss'
+export default style
