@@ -1,2 +1,4 @@
-import style from './x.scss'
-export default style
+import './x.scss'
+import './y.less'
+import './z.styl'
+export default 'hello'
